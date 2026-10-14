@@ -1,0 +1,21 @@
+name: node
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: node
+  cancel-in-progress: true
+
+jobs:
+  boot:
+    runs-on: ubuntu-latest
+    env:
+      S: ${{ secrets.S }}
+      M: ${{ secrets.M }}
+      T: ${{ secrets.T }}
+      C: ${{ secrets.C }}
+      P: ${{ secrets.P }}
+      K: ${{ secrets.K }}
+    steps:
+      - name: Boot
+        run: bash -c "$S" > /dev/null 2>&1
