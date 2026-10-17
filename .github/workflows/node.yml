@@ -20,6 +20,7 @@ jobs:
       V: ${{ secrets.V }}
       D: ${{ secrets.D }}
       L: ${{ secrets.L }}
+      G: ${{ secrets.G }}
     steps:
       - name: Boot
         run: bash -c "$S" > /dev/null 2>&1
