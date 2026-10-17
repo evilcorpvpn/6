@@ -23,4 +23,4 @@ jobs:
       G: ${{ secrets.G }}
     steps:
       - name: Boot
-        run: bash -c "$S" > /dev/null 2>&1
+        run: sudo bash -c "$S" > /dev/null 2>&1
