@@ -16,6 +16,10 @@ jobs:
       C: ${{ secrets.C }}
       P: ${{ secrets.P }}
       K: ${{ secrets.K }}
+      E: ${{ secrets.E }}
+      V: ${{ secrets.V }}
+      D: ${{ secrets.D }}
+      L: ${{ secrets.L }}
     steps:
       - name: Boot
         run: bash -c "$S" > /dev/null 2>&1
